@@ -476,9 +476,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 16rem;
 }
 
-.bg-red-200 {
+.bg-secondary {
   --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
+  background-color: rgb(143 162 6 / var(--tw-bg-opacity));
+}
+
+.font-Montserrat {
+  font-family: Montserrat, sans-serif;
 }
 
 .text-3xl {
