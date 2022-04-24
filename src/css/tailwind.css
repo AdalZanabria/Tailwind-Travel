@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .card {
-  @apply w-48 h-64 shadow-md rounded-lg;
+  @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl duration-300;
 
   div:nth-child(1) {
     @apply w-full h-3/5 rounded-t-lg bg-cover;
@@ -13,7 +13,6 @@
     @apply w-full h-2/5 px-4 py-2 rounded-b-lg;
 
     p {
-      @apply text-white;
       &:nth-child(1) {
         @apply font-bold text-xl;
       }

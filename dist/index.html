@@ -12,15 +12,19 @@
   <title>Platzi Travel</title>
 </head>
 
-<body>
+<body class="font-Montserrat">
   <nav></nav>
   <div id="tab_bar"></div>
   <section class="w-full h-screen">
+
     <div id="home">
       <div class="w-full h-3/4">
         <div class="w-full h-full flex flex-col absolute space-y-96 items-center py-4">
-          <input class="outline-none p-3 rounded-full shadow-sm" placeholder="San Francisco" type="search" />
-          <button class="bg-white text-xl text-primary font-semibold p-4 w-36 rounded-full shadow-sm">
+          <input
+            class="outline-none p-3 rounded-full shadow-sm transition-all ease-in-out duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12"
+            placeholder="San Francisco" type="search" />
+          <button
+            class="bg-white text-lg text-primary font-semibold p-4 w-48 rounded-full shadow-sm transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110">
             Explorar
           </button>
         </div>
@@ -29,16 +33,55 @@
         </div>
       </div>
     </div>
-    <div id="recomendadas" class="p-20">
-      <div class="card">
-        <div class="bg-norway"></div>
-        <div class="bg-secondary">
-          <p>Noruega</p>
-          <p>Paisajes increíbles</p>
+
+    <div id="recomendadas" class="p-6">
+      <p class="text-3xl font-semibold text-primary">Recomendados</p>
+      <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
+        <div class="card">
+          <div class="bg-norway"></div>
+          <div class="bg-secondary text-white">
+            <p>Noruega</p>
+            <p>Paisajes increíbles</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="bg-newYork"></div>
+          <div class="text-terciary">
+            <p>Nueva York</p>
+            <p>Jungla de concreto</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="bg-yosemite"></div>
+          <div class="bg-secondary text-white">
+            <p>Yosemite</p>
+            <p>Un descanso del mundo</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="bg-seattle"></div>
+          <div class="text-terciary">
+            <p>Seattle</p>
+            <p>Una gran ciudad</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="bg-switzerland"></div>
+          <div class="bg-secondary text-white">
+            <p>Suiza</p>
+            <p>Una gran ciudad</p>
+          </div>
         </div>
       </div>
+
     </div>
+
     <div id="rentas_destacadas"></div>
+
   </section>
   <footer></footer>
 </body>
