@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card {
+  @apply w-48 h-64 shadow-md rounded-lg;
+
+  div:nth-child(1) {
+    @apply w-full h-3/5 rounded-t-lg bg-cover;
+  }
+
+  div:nth-child(2) {
+    @apply w-full h-2/5 px-4 py-2 rounded-b-lg;
+
+    p {
+      @apply text-white;
+      &:nth-child(1) {
+        @apply font-bold text-xl;
+      }
+
+      &:nth-child(2) {
+        @apply text-base;
+      }
+    }
+  }
+}

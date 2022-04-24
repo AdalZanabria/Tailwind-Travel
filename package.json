@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx tailwindcss -i ./src/css/tailwind.css -o ./dist/css/main.css --watch",
-    "prod": "postcss ./src/css/tailwind.css -o ./dist/css/styles.css --verbose --config ./postcss.config.js"
+    "dev:tailwind": "npx tailwindcss -i ./src/css/tailwind.css -o ./dist/css/main.css --watch",
+    "dev:postcss": "postcss ./src/css/tailwind.css -o ./dist/css/main.css --verbose --config ./postcss.config.js --watch"
   },
   "keywords": [
     "tailwind"
