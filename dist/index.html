@@ -9,13 +9,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Platzi Travel</title>
 </head>
 
 <body class="font-Montserrat">
   <nav></nav>
   <div id="tab_bar"></div>
-  <section class="w-full h-screen">
+  <section class="w-full h-auto">
 
     <div id="home">
       <div class="w-full h-3/4">
@@ -35,7 +38,7 @@
     </div>
 
     <div id="recomendadas" class="p-6">
-      <p class="text-3xl font-semibold text-primary">Recomendados</p>
+      <p class="title">Recomendados</p>
       <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
         <div class="card">
           <div class="bg-norway"></div>
@@ -80,10 +83,91 @@
 
     </div>
 
-    <div id="rentas_destacadas"></div>
+    <div id="rentas_destacadas" class="p-6">
+      <div class="h-full w-full">
+        <p class="title">Rentas Destacadas</p>
+        <div class="mt-6 w-full flex flex-col space-y-6 items-center justify-center">
+
+          <div class="card-rentas bg-chicago">
+            <p class="text-white">Chicago</p>
+            <p class="text-black">2 Habitaciones, baño y cocina.</p>
+          </div>
+
+          <div class="card-rentas bg-LA">
+            <p class="text-white">Los Angeles</p>
+            <p class="text-white">4 Habitaciones, 3 baños, cocina y alberca privada.</p>
+          </div>
+
+          <div class="card-rentas bg-miami">
+            <p class="text-white">Miami</p>
+            <p class="text-black">3 Habitaciones, 2 baños, cocina y espectacular vista a la playa.</p>
+          </div>
+
+          <div class="card-rentas bg-bali">
+            <p class="text-white">Bali</p>
+            <p class="text-white">2 Habitaciones, 2 baños, cocina y alberca privada.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="faqs" class="p-6">
+      <div class="w-full h-full flex flex-col space-y-4">
+        <p class="title">FAQs</p>
+        <div class="faq">
+          <p>Política de Cancelación</p>
+          <p>Para estancias menores a una semana es importante avisar con 3 días de
+            anticipación, de caso contario será sancionado.</p>
+        </div>
+        <div class="faq">
+          <p>Métodos de pago</p>
+          <p>Aceptamos distintos métodos de pago: VISA, MasterCard, American Express,
+            Paypal y Binance.</p>
+        </div>
+        <div class="faq">
+          <p>Mascotas</p>
+          <p>El tema de las mascotas dependerá directamente del anfitrión.</p>
+        </div>
+        <div class="faq">
+          <p>Información de Seguridad</p>
+          <p>Todas nuestras estancias cuentan con seguro en caso de accidentes.</p>
+        </div>
+        <div class="faq">
+          <p>Estancias Largas</p>
+          <p>Contamos con estancias de hasta 3 meses, en este caso es requerido un
+            anticipo con un monto del 50% del valor de la renta.</p>
+        </div>
+      </div>
+    </div>
 
   </section>
-  <footer></footer>
+
+  <footer class="w-full h-auto bg-gray-50 p-6">
+    <p class="title">Acerca De</p>
+    <ul class="text-gray-300 my-6 flex flex-col space-y-2">
+      <li class="text-sm">Inversionistas</li>
+      <li class="text-sm">Empleos</li>
+      <li class="text-sm">Políticas de Privacidad</li>
+      <li class="text-sm">Términos y Condiciones</li>
+      <li class="text-sm">Travel, inc</li>
+    </ul>
+    <p class="title">Síguenos</p>
+    <ul class="my-6 flex space-x-6 text-3xl text-gray-300">
+      <li>
+        <i class="fa-brands fa-twitter hover:text-primary"></i>
+      </li>
+      <li>
+        <i class="fa-brands fa-instagram hover:text-primary"></i>
+      </li>
+      <li>
+        <i class="fa-brands fa-facebook hover:text-primary"></i>
+      </li>
+      <li>
+        <i class="fa-brands fa-tiktok hover:text-primary"></i>
+      </li>
+    </ul>
+  </footer>
 </body>
 
 </html>

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.title {
+  @apply text-3xl text-primary font-semibold;
+}
+
 .card {
   @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl duration-300;
 
@@ -16,10 +20,32 @@
       &:nth-child(1) {
         @apply font-bold text-xl;
       }
-
       &:nth-child(2) {
         @apply text-base;
       }
+    }
+  }
+}
+
+.card-rentas {
+  @apply w-full h-96 bg-cover rounded-xl flex-none shadow-md;
+  p {
+    &:nth-child(1) {
+      @apply text-3xl px-8 pt-8 pb-2 font-semibold;
+    }
+    &:nth-child(2) {
+      @apply text-sm pl-8 mr-24;
+    }
+  }
+}
+
+.faq {
+  p {
+    &:nth-child(1) {
+      @apply text-xl font-medium text-primary;
+    }
+    &:nth-child(2) {
+      @apply text-base pt-2;
     }
   }
 }
