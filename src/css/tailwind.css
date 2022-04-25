@@ -28,13 +28,13 @@
 }
 
 .card-rentas {
-  @apply w-full h-96 bg-cover rounded-xl flex-none shadow-md;
+  @apply w-full h-96 lg:h-full bg-cover rounded-xl flex-none shadow-md;
   p {
     &:nth-child(1) {
       @apply text-3xl px-8 pt-8 pb-2 font-semibold;
     }
     &:nth-child(2) {
-      @apply text-sm pl-8 mr-24;
+      @apply text-sm pl-8 mr-24 lg:text-lg;
     }
   }
 }

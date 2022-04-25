@@ -12,26 +12,72 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Platzi Travel</title>
+  <title>Tailwind Travel</title>
 </head>
 
 <body class="font-Montserrat">
-  <nav></nav>
+  <nav class="w-full h-14 hidden bg-white lg:flex px-6 items-center justify-between fixed z-10">
+    <div class="h-auto w-auto">
+      <p class="text-xl text-primary font-black">Tailwind Travel</p>
+    </div>
+    <ul class="flex space-x-8">
+      <li>
+        <a href="#home" class="font-bold text-md text-primary">Inicio</a>
+      </li>
+      <li>
+        <a href="#recomendadas" class="font-bold text-md text-primary">Recomendados</a>
+      </li>
+      <li>
+        <a href="#rentas_destacadas" class="font-bold text-md text-primary">Rentas</a>
+      </li>
+      <li>
+        <a href="#faqs" class="font-bold text-md text-primary">FAQs</a>
+      </li>
+      <li>
+        <a href="#acercaDe" class="font-bold text-md text-primary">Acerca De</a>
+      </li>
+    </ul>
+    <div class="flex space-x-8">
+      <svg width="20" height="20" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="fill-current text-primary" fill-rule="evenodd" clip-rule="evenodd"
+          d="M9.91667 0.875C4.92309 0.875 0.875 4.92309 0.875 9.91667C0.875 14.9102 4.92309 18.9583 9.91667 18.9583C11.9476 18.9583 13.8221 18.2887 15.3316 17.1582L20.6284 22.4551C21.1328 22.9595 21.9507 22.9595 22.4551 22.4551C22.9595 21.9507 22.9595 21.1328 22.4551 20.6284L17.1582 15.3316C18.2887 13.8221 18.9583 11.9476 18.9583 9.91667C18.9583 4.92309 14.9102 0.875 9.91667 0.875ZM3.45833 9.91667C3.45833 6.34983 6.34983 3.45833 9.91667 3.45833C13.4835 3.45833 16.375 6.34983 16.375 9.91667C16.375 13.4835 13.4835 16.375 9.91667 16.375C6.34983 16.375 3.45833 13.4835 3.45833 9.91667Z"
+          fill="#CC2D4A" />
+      </svg>
+      <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="fill-current text-primary"
+          d="M15.293 11.293C13.8115 11.9631 12.161 12.1659 10.5614 11.8743C8.96173 11.5827 7.48893 10.8106 6.33918 9.66082C5.18943 8.51107 4.41732 7.03827 4.12573 5.43863C3.83413 3.839 4.03689 2.18849 4.707 0.707001C3.52756 1.24001 2.49503 2.0512 1.698 3.07096C0.900971 4.09072 0.363229 5.28862 0.130909 6.56189C-0.101411 7.83515 -0.0213717 9.14577 0.364159 10.3813C0.749689 11.6168 1.4292 12.7404 2.3444 13.6556C3.2596 14.5708 4.38316 15.2503 5.61869 15.6358C6.85423 16.0214 8.16485 16.1014 9.43811 15.8691C10.7114 15.6368 11.9093 15.099 12.929 14.302C13.9488 13.505 14.76 12.4724 15.293 11.293Z"
+          fill="#CC2D4A" />
+      </svg>
+      <svg width="20" height="20" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="fill-current text-gray-400" fill-rule="evenodd" clip-rule="evenodd"
+          d="M2.78225 17.6464C4.4799 15.2799 7.48651 13.4999 12.4999 13.4999C17.5132 13.4999 20.5199 15.2799 22.2175 17.6464C23.8582 19.9336 24.1196 22.5552 24.1248 24.0058C24.13 25.4645 22.9071 26.4166 21.6533 26.4166H3.34642C2.09262 26.4166 0.869709 25.4645 0.874956 24.0058C0.880174 22.5552 1.1415 19.9336 2.78225 17.6464Z"
+          fill="#F2F2F2" />
+        <path class="fill-current text-gray-400" fill-rule="evenodd" clip-rule="evenodd"
+          d="M12.5 10.9166C15.3535 10.9166 17.6667 8.60339 17.6667 5.74992C17.6667 2.89645 15.3535 0.583252 12.5 0.583252C9.64653 0.583252 7.33334 2.89645 7.33334 5.74992C7.33334 8.60339 9.64653 10.9166 12.5 10.9166Z"
+          fill="#F2F2F2" />
+      </svg>
+    </div>
+  </nav>
   <section class="w-full h-auto">
 
     <div id="home">
-      <div class="w-full h-3/4">
-        <div class="w-full h-full flex flex-col absolute space-y-96 items-center py-4">
+      <div class="w-full h-auto">
+        <div
+          class="w-full h-full flex flex-col absolute space-y-96 items-center p-6 lg:space-y-0 lg:items-start lg:pt-20 lg:justify-start">
           <input
-            class="outline-none p-3 rounded-full shadow-sm transition-all ease-in-out duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12"
+            class="outline-none p-3 rounded-full shadow-sm transition-all ease-in-out duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden"
             placeholder="San Francisco" type="search" />
+          <div class="hidden h-auto lg:w-2/5 lg:flex pb-6">
+            <p class="text-4xl font-bold">Encuentra más ubicaciones
+              como esta</p>
+          </div>
           <button
             class="bg-white text-lg text-primary font-semibold p-4 w-48 rounded-full shadow-sm transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110">
             Explorar
           </button>
         </div>
-        <div class="w-full h-full">
-          <img src="./img/sanFrancisco.jpg" alt="San Francisco" />
+        <div class="w-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
+          <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="San Francisco" />
         </div>
       </div>
     </div>
@@ -78,37 +124,56 @@
             <p>Una gran ciudad</p>
           </div>
         </div>
+
+        <div class="card">
+          <div class="bg-sydney bg-center"></div>
+          <div class="text-terciary">
+            <p>Sydney</p>
+            <p>Conoce la Ópera de Sídney.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="bg-iceland"></div>
+          <div class="bg-secondary text-white">
+            <p>Islandia</p>
+            <p>Increíbles vistas.</p>
+          </div>
+        </div>
       </div>
 
     </div>
 
     <div id="rentas_destacadas" class="p-6">
-      <div class="h-full w-full">
+      <div class="h-auto w-full">
         <p class="title">Rentas Destacadas</p>
-        <div class="mt-6 w-full flex flex-col space-y-6 items-center justify-center">
+        <div
+          class="mt-6 w-full flex flex-col space-y-6 items-center justify-center lg:space-y-0 lg:flex-none lg:grid lg:grid-cols-2 lg:grid-rows-4 lg:gap-4 lg:h-screen">
 
-          <div class="card-rentas bg-chicago">
-            <p class="text-white">Chicago</p>
+          <div class="card-rentas bg-chicago lg:col-span-2 lg:row-span-2 lg:bg-bottom">
+            <p class="text-white lg:text-black lg:mt-20">Chicago</p>
             <p class="text-black">2 Habitaciones, baño y cocina.</p>
           </div>
 
-          <div class="card-rentas bg-LA">
+          <div class="card-rentas bg-LA lg:row-span-2 lg:bg-center">
             <p class="text-white">Los Angeles</p>
             <p class="text-white">4 Habitaciones, 3 baños, cocina y alberca privada.</p>
           </div>
 
-          <div class="card-rentas bg-miami">
+          <div class="card-rentas bg-miami bg-center lg:bg-center">
             <p class="text-white">Miami</p>
             <p class="text-black">3 Habitaciones, 2 baños, cocina y espectacular vista a la playa.</p>
           </div>
 
-          <div class="card-rentas bg-bali">
+          <div class="card-rentas bg-bali lg:bg-center">
             <p class="text-white">Bali</p>
             <p class="text-white">2 Habitaciones, 2 baños, cocina y alberca privada.</p>
           </div>
 
         </div>
+
       </div>
+    </div>
     </div>
 
     <div id="faqs" class="p-6">
@@ -142,14 +207,14 @@
 
   </section>
 
-  <footer class="w-full h-auto bg-gray-50 p-6 mb-16">
+  <footer id="acercaDe" class="w-full h-auto bg-gray-50 p-6 mb-16 lg:mb-0">
     <p class="title">Acerca De</p>
     <ul class="text-gray-300 my-6 flex flex-col space-y-2">
       <li class="text-sm">Inversionistas</li>
       <li class="text-sm">Empleos</li>
       <li class="text-sm">Políticas de Privacidad</li>
       <li class="text-sm">Términos y Condiciones</li>
-      <li class="text-sm">Travel, inc</li>
+      <li class="text-sm">Tailwind Travel</li>
     </ul>
     <p class="title">Síguenos</p>
     <ul class="my-6 flex space-x-6 text-3xl text-gray-300">
@@ -168,7 +233,8 @@
     </ul>
   </footer>
 
-  <div id="tab_bar" class="w-full h-16 bg-primary fixed left-0 bottom-0 shadow-md flex items-center justify-around">
+  <div id="tab_bar"
+    class="w-full h-16 bg-primary fixed left-0 bottom-0 shadow-md flex items-center justify-around lg:hidden">
     <a href="#home">
       <svg width="30" height="30" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path class="fill-current text-gray-200"
