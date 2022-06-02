@@ -1,7 +1,7 @@
 <h1 align="center">Tailwind Travel</h1>
 <p align="center">Landing page de sitio turístico</p>
 
-<a href="https://imgur.com/BglubA2"><img src="https://i.imgur.com/BglubA2.gif" title="source: imgur.com" /></a>
+<img src="https://i.imgur.com/oRnkpJp.gif" title="source: imgur.com" />
 
 <br>
 <p><strong>Tecnologías utilizadas:</strong></p>
